@@ -1,0 +1,7 @@
+key,value
+common.data_origin,experiments
+common.technical_category,measurement
+measurement.method_category,分光法
+measurement.method_sub_category,オージェ電子分光法
+measurement.analysis_field,"定性分析, 定量分析"
+measurement.measurement_environment,真空中

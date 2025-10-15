@@ -1,0 +1,118 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://rde.nims.go.jp/rde/dataset-templates/NIMS_AES-depth/invoice.schema.json",
+  "description": "固有情報と試料情報のスキーマ",
+  "type": "object",
+  "required": [
+    "custom",
+    "sample"
+  ],
+  "properties": {
+    "custom": {
+      "type": "object",
+      "label": {
+        "ja": "固有情報",
+        "en": "Specific Information"
+      },
+      "required": [
+        "measurement_method",
+        "measurement_condition"
+      ],
+      "properties": {
+        "analyser_detection_solid_angle": {
+          "type": "string",
+          "label": {
+            "ja": "分光器への信号取込み立体角",
+            "en": "Analyser detection solid angle"
+          },
+          "options": {
+            "unit": "sr"
+          }
+        },
+        "analyser_transmission_function": {
+          "type": "string",
+          "label": {
+            "ja": "分光器の透過関数",
+            "en": "Analyser transmission function"
+          }
+        },
+        "analyser_type": {
+          "type": "string",
+          "label": {
+            "ja": "分光器の型",
+            "en": "Analyser type"
+          }
+        },
+        "frr_crr_analyser_energy_resolution": {
+          "type": "string",
+          "label": {
+            "ja": "FRR/CRRエネルギー分解能の値",
+            "en": "FRR/CRR Analyser energy resolution"
+          },
+          "options": {
+            "unit": "%"
+          }
+        },
+        "fat_cae_analyser_energy_resolution": {
+          "type": "string",
+          "label": {
+            "ja": "FAT/CAEエネルギー分解能の値",
+            "en": "FAT/CAE Analyser energy resolution"
+          },
+          "options": {
+            "unit": "eV"
+          }
+        },
+        "energy_resolution_from_obtained_spectrum": {
+          "type": "string",
+          "label": {
+            "ja": "取得スペクトルからのエネルギー分解能",
+            "en": "Energy resolution from obtained spectrum"
+          },
+          "options": {
+            "unit": "eV"
+          }
+        },
+        "measurement_method": {
+          "type": "string",
+          "label": {
+            "ja": "測定方法",
+            "en": "Measurement method"
+          }
+        },
+        "measurement_condition": {
+          "type": "string",
+          "label": {
+            "ja": "測定条件",
+            "en": "Measurement condition"
+          }
+        }
+      }
+    },
+    "sample": {
+      "type": "object",
+      "label": {
+        "ja": "試料情報",
+        "en": "Sample Information"
+      },
+      "properties": {
+        "generalAttributes": {
+          "type": "array",
+          "items": [
+            {
+              "type": "object",
+              "required": [
+                "termId"
+              ],
+              "properties": {
+                "termId": {
+                  "const": "3adf9874-7bcb-e5f8-99cb-3d6fd9d7b55e"
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,420 @@
+{
+    "common.data_origin": {
+        "name": {
+            "ja": "データの起源",
+            "en": "Data Origin"
+        },
+        "schema": {
+            "type": "string"
+        }
+    },
+    "common.technical_category": {
+        "name": {
+            "ja": "技術カテゴリー",
+            "en": "Technical Category"
+        },
+        "schema": {
+            "type": "string"
+        }
+    },
+    "measurement.method_category": {
+        "name": {
+            "ja": "計測法カテゴリー",
+            "en": "Method category"
+        },
+        "schema": {
+            "type": "string"
+        }
+    },
+    "measurement.method_sub_category": {
+        "name": {
+            "ja": "計測法サブカテゴリー",
+            "en": "Method sub-category"
+        },
+        "schema": {
+            "type": "string"
+        }
+    },
+    "measurement.analysis_field": {
+        "name": {
+            "ja": "分析分野",
+            "en": "Analysis field"
+        },
+        "schema": {
+            "type": "string"
+        }
+    },
+    "measurement.specimen": {
+        "name": {
+            "ja": "試料",
+            "en": "Specimen"
+        },
+        "schema": {
+            "type": "string"
+        }
+    },
+    "measurement.measurement_environment": {
+        "name": {
+            "ja": "測定環境",
+            "en": "Measurement environment"
+        },
+        "schema": {
+            "type": "string"
+        }
+    },
+    "measurement.energy_level_transition_structure_etc_of_interest": {
+        "name": {
+            "ja": "対象準位_遷移_構造",
+            "en": "Energy Level_Transition_Structure etc. of interest"
+        },
+        "schema": {
+            "type": "string"
+        }
+    },
+    "measurement.measured_date": {
+        "name": {
+            "ja": "分析年月日",
+            "en": "Measured date"
+        },
+        "schema": {
+            "type": "string",
+            "format": "date"
+        }
+    },
+    "measurement.standardized_procedure_specified_number": {
+        "name": {
+            "ja": "標準手順",
+            "en": "Standardized procedure"
+        },
+        "schema": {
+            "type": "string"
+        }
+    },
+    "measurement.instrumentation_site": {
+        "name": {
+            "ja": "装置設置場所",
+            "en": "Instrumentation site"
+        },
+        "schema": {
+            "type": "string"
+        }
+    },
+    "measurement.reference": {
+        "name": {
+            "ja": "参考文献",
+            "en": "Reference"
+        },
+        "schema": {
+            "type": "string"
+        }
+    },
+    "operator_identifier": {
+        "name": {
+            "ja": "測定者",
+            "en": "Operator identifier"
+        },
+        "schema": {
+            "type": "string"
+        },
+        "originalName": "AP_OPERATOR"
+    },
+    "operation_date_time_year": {
+        "name": {
+            "ja": "測定日時[年]",
+            "en": "Operation Date-time[Year]"
+        },
+        "schema": {
+            "type": "integer"
+        },
+        "originalName": "AP_ACQDATE"
+    },
+    "operation_date_time_month": {
+        "name": {
+            "ja": "測定日時[月]",
+            "en": "Operation Date-time[Month]"
+        },
+        "schema": {
+            "type": "integer"
+        },
+        "originalName": "AP_ACQDATE"
+    },
+    "operation_date_time_day": {
+        "name": {
+            "ja": "測定日時[日]",
+            "en": "Operation Date-time[Day]"
+        },
+        "schema": {
+            "type": "integer"
+        },
+        "originalName": "AP_ACQDATE"
+    },
+    "operation_date_time_hour": {
+        "name": {
+            "ja": "測定日時[時]",
+            "en": "Operation Date-time[Hour]"
+        },
+        "schema": {
+            "type": "integer"
+        },
+        "originalName": "AP_ACQDATE"
+    },
+    "operation_date_time_minute": {
+        "name": {
+            "ja": "測定日時[分]",
+            "en": "Operation Date-time[Minute]"
+        },
+        "schema": {
+            "type": "integer"
+        },
+        "originalName": "AP_ACQDATE"
+    },
+    "operation_date_time_second": {
+        "name": {
+            "ja": "測定日時[秒]",
+            "en": "Operation Date-time[Second]"
+        },
+        "schema": {
+            "type": "integer"
+        },
+        "originalName": "AP_ACQDATE"
+    },
+    "probe_energy": {
+        "name": {
+            "ja": "プローブエネルギー",
+            "en": "Probe energy"
+        },
+        "schema": {
+            "type": "string"
+        },
+        "originalName": "AP_PENERGY",
+        "unit": "keV",
+        "originalType": "number"
+    },
+    "probe_current": {
+        "name": {
+            "ja": "プローブ電流",
+            "en": "Probe current"
+        },
+        "schema": {
+            "type": "string"
+        },
+        "originalName": "AP_PCURRENT",
+        "unit": "A"
+    },
+    "analyzer_mode": {
+        "name": {
+            "ja": "分析器分光動作モード",
+            "en": "Analyzer Mode"
+        },
+        "schema": {
+            "type": "string"
+        },
+        "originalName": "AP_SPC_ANAMOD"
+    },
+    "analyser_pass_energy": {
+        "name": {
+            "ja": "分光器のパスエネルギー",
+            "en": "Analyser pass energy"
+        },
+        "schema": {
+            "type": "string"
+        },
+        "originalName": "AP_SPC_ES",
+        "unit": "eV",
+        "originalType": "number"
+    },
+    "species_label_transitions": {
+        "name": {
+            "ja": "スペクトルの元素種と遷移",
+            "en": "Species label &Transitions"
+        },
+        "schema": {
+            "type": "string"
+        },
+        "originalName": "AP_SPC_ROI_NAME",
+        "variable": 1
+    },
+    "abscissa_start": {
+        "name": {
+            "ja": "横軸の起点",
+            "en": "Abscissa start"
+        },
+        "schema": {
+            "type": "string"
+        },
+        "unit": "eV",
+        "description": "WIDEの場合はAP_SPC_WSTARTから取得。NARROWの場合はAP_SPC_ROI_STARTから取得。",
+        "originalType": "number",
+        "variable": 1
+    },
+    "abscissa_end": {
+        "name": {
+            "ja": "横軸の終点",
+            "en": "Abscissa end"
+        },
+        "schema": {
+            "type": "string"
+        },
+        "unit": "eV",
+        "description": "WIDEの場合はAP_SPC_WSTOPから取得。NARROWの場合はAP_SPC_ROI_STOPから取得。",
+        "originalType": "number",
+        "variable": 1
+    },
+    "abscissa_increment": {
+        "name": {
+            "ja": "エネルギーステップ幅",
+            "en": "Abscissa increment"
+        },
+        "schema": {
+            "type": "string"
+        },
+        "unit": "eV",
+        "description": "WIDEの場合はAP_SPC_WSTEPから取得。NARROWの場合はAP_SPC_ROI_STEPから取得。",
+        "originalType": "number",
+        "variable": 1
+    },
+    "collection_time": {
+        "name": {
+            "ja": "シグナル収集時間（データ1点当たりの溜め込み時間）",
+            "en": "Collection time"
+        },
+        "schema": {
+            "type": "string"
+        },
+        "unit": "ms",
+        "description": "WIDEの場合はAP_SPC_WDWELLから取得。NARROWの場合はAP_SPC_ROI_DWELLから取得。",
+        "originalType": "number",
+        "variable": 1
+    },
+    "total_acquisition_number": {
+        "name": {
+            "ja": "総積算回数",
+            "en": "Total Acquisition Number"
+        },
+        "schema": {
+            "type": "string"
+        },
+        "description": "WIDEの場合はAP_SPC_WSWEEPSから取得。NARROWの場合はAP_SPC_ROI_SWEEPSから取得。",
+        "originalType": "number",
+        "variable": 1
+    },
+    "probe_scan_mode": {
+        "name": {
+            "ja": "入射プローブの走査方法",
+            "en": "Probe scan mode"
+        },
+        "schema": {
+            "type": "string"
+        },
+        "originalName": "AP_SPOSN_BSMOD"
+    },
+    "probe_diameter": {
+        "name": {
+            "ja": "入射プローブのビーム直径",
+            "en": "Probe diameter"
+        },
+        "schema": {
+            "type": "string"
+        },
+        "originalName": "AP_SPOSN_PDIA",
+        "unit": "um",
+        "originalType": "number"
+    },
+    "upper_left_x_coordinate": {
+        "name": {
+            "ja": "分析領域の左上座標X",
+            "en": "Upper left x coordinate"
+        },
+        "schema": {
+            "type": "string"
+        },
+        "originalName": "AP_SPOSN_BEAM_P1X",
+        "originalType": "number"
+    },
+    "upper_left_y_coordinate": {
+        "name": {
+            "ja": "分析領域の左上座標Y",
+            "en": "Upper left y coordinate"
+        },
+        "schema": {
+            "type": "string"
+        },
+        "originalName": "AP_SPOSN_BEAM_P1Y",
+        "originalType": "number"
+    },
+    "lower_right_x_coordinate": {
+        "name": {
+            "ja": "分析領域の右下座標X",
+            "en": "Lower right x coordinate"
+        },
+        "schema": {
+            "type": "string"
+        },
+        "originalName": "AP_SPOSN_BEAM_P2X",
+        "originalType": "number"
+    },
+    "lower_right_y_coordinate": {
+        "name": {
+            "ja": "分析領域の右下座標Y",
+            "en": "Lower right y coordinate"
+        },
+        "schema": {
+            "type": "string"
+        },
+        "originalName": "AP_SPOSN_BEAM_P2Y",
+        "originalType": "number"
+    },
+    "probe_polar_angle_to_sample_normal": {
+        "name": {
+            "ja": "入射プローブの入射角",
+            "en": "Probe polar angle to sample normal"
+        },
+        "schema": {
+            "type": "string"
+        },
+        "originalName": "AP_STGTILT",
+        "unit": "deg",
+        "originalType": "number"
+    },
+    "comment": {
+        "name": {
+            "ja": "コメント",
+            "en": "Comment"
+        },
+        "schema": {
+            "type": "string"
+        },
+        "originalName": "AP_COMMENT"
+    },
+    "neutralization_active_mode": {
+        "name": {
+            "ja": "中和実行の有無",
+            "en": "Neutralization active mode"
+        },
+        "schema": {
+            "type": "string"
+        },
+        "originalName": "AP_IGN_NEUT_MODE"
+    },
+    "data_type": {
+        "name": {
+            "ja": "データの種類",
+            "en": "Data type"
+        },
+        "schema": {
+            "type": "string"
+        },
+        "originalName": "AP_DATATYPE"
+    },
+    "analysis_chamber_pressure_when_measurement_finished": {
+        "name": {
+            "ja": "分析終了時の分析室の真空度",
+            "en": "Analysis chamber pressure when measurement finished"
+        },
+        "schema": {
+            "type": "string"
+        },
+        "originalName": "AP_CHAMBER_PRESS",
+        "unit": "Pa"
+    }
+}
