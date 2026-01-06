@@ -1,7 +1,7 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "https://rde.nims.go.jp/rde/dataset-templates/NIMS_AES-survey/invoice.schema.json",
-    "description": "固有情報と試料情報のスキーマ",
+    "$id": "https://rde.nims.go.jp/rde/dataset-templates/RDEDatasetTemplateSheet_RDE_AES-survey/invoice.schema.json",
+    "description": "標準データセットテンプレートRDE_AESのAES-survey用RDEデータセットテンプレート: 送状定義",
     "type": "object",
     "required": [
         "custom",
@@ -12,72 +12,73 @@
             "type": "object",
             "label": {
                 "ja": "固有情報",
-                "en": "Specific Information"
+                "en": "Custom Information"
             },
             "required": [
                 "measurement_method"
             ],
             "properties": {
                 "analyser_detection_solid_angle": {
-                    "type": "string",
                     "label": {
                         "ja": "分光器への信号取込み立体角",
                         "en": "Analyser detection solid angle"
                     },
+                    "type": "string",
                     "options": {
                         "unit": "sr"
                     }
                 },
                 "analyser_transmission_function": {
-                    "type": "string",
                     "label": {
                         "ja": "分光器の透過関数",
                         "en": "Analyser transmission function"
-                    }
+                    },
+                    "type": "string"
                 },
                 "analyser_type": {
-                    "type": "string",
                     "label": {
                         "ja": "分光器の型",
                         "en": "Analyser type"
-                    }
+                    },
+                    "type": "string"
                 },
                 "frr_crr_analyser_energy_resolution": {
-                    "type": "string",
                     "label": {
                         "ja": "FRR/CRRエネルギー分解能の値",
                         "en": "FRR/CRR Analyser energy resolution"
                     },
+                    "type": "string",
                     "options": {
                         "unit": "%"
                     }
                 },
                 "fat_cae_analyser_energy_resolution": {
-                    "type": "string",
                     "label": {
                         "ja": "FAT/CAEエネルギー分解能の値",
                         "en": "FAT/CAE Analyser energy resolution"
                     },
+                    "type": "string",
                     "options": {
                         "unit": "eV"
                     }
                 },
                 "energy_resolution_from_obtained_spectrum": {
-                    "type": "string",
                     "label": {
                         "ja": "取得スペクトルからのエネルギー分解能",
                         "en": "Energy resolution from obtained spectrum"
                     },
+                    "type": "string",
                     "options": {
                         "unit": "eV"
                     }
                 },
                 "measurement_method": {
-                    "type": "string",
                     "label": {
                         "ja": "測定方法",
                         "en": "Measurement method"
-                    }
+                    },
+                    "type": "string",
+                    "default": "measurement_method"
                 }
             }
         },
