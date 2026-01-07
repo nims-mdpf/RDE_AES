@@ -78,7 +78,7 @@
         },
         "schema": {
             "type": "string",
-            "format": "date"
+            "format": "date-time"
         }
     },
     "measurement.standardized_procedure_specified_number": {
@@ -116,7 +116,7 @@
         "schema": {
             "type": "string"
         },
-        "originalName": "AP_OPERATOR"
+        "original_name": "AP_OPERATOR"
     },
     "operation_date_time_year": {
         "name": {
@@ -126,7 +126,7 @@
         "schema": {
             "type": "integer"
         },
-        "originalName": "AP_ACQDATE"
+        "original_name": "AP_ACQDATE"
     },
     "operation_date_time_month": {
         "name": {
@@ -136,7 +136,7 @@
         "schema": {
             "type": "integer"
         },
-        "originalName": "AP_ACQDATE"
+        "original_name": "AP_ACQDATE"
     },
     "operation_date_time_day": {
         "name": {
@@ -146,7 +146,7 @@
         "schema": {
             "type": "integer"
         },
-        "originalName": "AP_ACQDATE"
+        "original_name": "AP_ACQDATE"
     },
     "operation_date_time_hour": {
         "name": {
@@ -156,7 +156,7 @@
         "schema": {
             "type": "integer"
         },
-        "originalName": "AP_ACQDATE"
+        "original_name": "AP_ACQDATE"
     },
     "operation_date_time_minute": {
         "name": {
@@ -166,7 +166,7 @@
         "schema": {
             "type": "integer"
         },
-        "originalName": "AP_ACQDATE"
+        "original_name": "AP_ACQDATE"
     },
     "operation_date_time_second": {
         "name": {
@@ -176,7 +176,7 @@
         "schema": {
             "type": "integer"
         },
-        "originalName": "AP_ACQDATE"
+        "original_name": "AP_ACQDATE"
     },
     "probe_energy": {
         "name": {
@@ -186,9 +186,9 @@
         "schema": {
             "type": "string"
         },
-        "originalName": "AP_PENERGY",
         "unit": "keV",
-        "originalType": "number"
+        "original_name": "AP_PENERGY",
+        "original_type": "number"
     },
     "probe_current": {
         "name": {
@@ -198,8 +198,8 @@
         "schema": {
             "type": "string"
         },
-        "originalName": "AP_PCURRENT",
-        "unit": "A"
+        "unit": "A",
+        "original_name": "AP_PCURRENT"
     },
     "analyzer_mode": {
         "name": {
@@ -209,7 +209,7 @@
         "schema": {
             "type": "string"
         },
-        "originalName": "AP_SPC_ANAMOD"
+        "original_name": "AP_SPC_ANAMOD"
     },
     "analyser_pass_energy": {
         "name": {
@@ -219,9 +219,9 @@
         "schema": {
             "type": "string"
         },
-        "originalName": "AP_SPC_ES",
         "unit": "eV",
-        "originalType": "number"
+        "original_name": "AP_SPC_ES",
+        "original_type": "number"
     },
     "species_label_transitions": {
         "name": {
@@ -231,8 +231,8 @@
         "schema": {
             "type": "string"
         },
-        "originalName": "AP_SPC_ROI_NAME",
-        "variable": 1
+        "variable": 1,
+        "original_name": "AP_SPC_ROI_NAME"
     },
     "abscissa_start": {
         "name": {
@@ -244,8 +244,8 @@
         },
         "unit": "eV",
         "description": "WIDEの場合はAP_SPC_WSTARTから取得。NARROWの場合はAP_SPC_ROI_STARTから取得。",
-        "originalType": "number",
-        "variable": 1
+        "variable": 1,
+        "original_type": "number"
     },
     "abscissa_end": {
         "name": {
@@ -257,8 +257,8 @@
         },
         "unit": "eV",
         "description": "WIDEの場合はAP_SPC_WSTOPから取得。NARROWの場合はAP_SPC_ROI_STOPから取得。",
-        "originalType": "number",
-        "variable": 1
+        "variable": 1,
+        "original_type": "number"
     },
     "abscissa_increment": {
         "name": {
@@ -270,8 +270,8 @@
         },
         "unit": "eV",
         "description": "WIDEの場合はAP_SPC_WSTEPから取得。NARROWの場合はAP_SPC_ROI_STEPから取得。",
-        "originalType": "number",
-        "variable": 1
+        "variable": 1,
+        "original_type": "number"
     },
     "collection_time": {
         "name": {
@@ -283,8 +283,8 @@
         },
         "unit": "ms",
         "description": "WIDEの場合はAP_SPC_WDWELLから取得。NARROWの場合はAP_SPC_ROI_DWELLから取得。",
-        "originalType": "number",
-        "variable": 1
+        "variable": 1,
+        "original_type": "number"
     },
     "total_acquisition_number": {
         "name": {
@@ -295,8 +295,8 @@
             "type": "string"
         },
         "description": "WIDEの場合はAP_SPC_WSWEEPSから取得。NARROWの場合はAP_SPC_ROI_SWEEPSから取得。",
-        "originalType": "number",
-        "variable": 1
+        "variable": 1,
+        "original_type": "number"
     },
     "probe_scan_mode": {
         "name": {
@@ -306,7 +306,7 @@
         "schema": {
             "type": "string"
         },
-        "originalName": "AP_SPOSN_BSMOD"
+        "original_name": "AP_SPOSN_BSMOD"
     },
     "probe_diameter": {
         "name": {
@@ -316,9 +316,9 @@
         "schema": {
             "type": "string"
         },
-        "originalName": "AP_SPOSN_PDIA",
         "unit": "um",
-        "originalType": "number"
+        "original_name": "AP_SPOSN_PDIA",
+        "original_type": "number"
     },
     "upper_left_x_coordinate": {
         "name": {
@@ -328,8 +328,8 @@
         "schema": {
             "type": "string"
         },
-        "originalName": "AP_SPOSN_BEAM_P1X",
-        "originalType": "number"
+        "original_name": "AP_SPOSN_BEAM_P1X",
+        "original_type": "number"
     },
     "upper_left_y_coordinate": {
         "name": {
@@ -339,8 +339,8 @@
         "schema": {
             "type": "string"
         },
-        "originalName": "AP_SPOSN_BEAM_P1Y",
-        "originalType": "number"
+        "original_name": "AP_SPOSN_BEAM_P1Y",
+        "original_type": "number"
     },
     "lower_right_x_coordinate": {
         "name": {
@@ -350,8 +350,8 @@
         "schema": {
             "type": "string"
         },
-        "originalName": "AP_SPOSN_BEAM_P2X",
-        "originalType": "number"
+        "original_name": "AP_SPOSN_BEAM_P2X",
+        "original_type": "number"
     },
     "lower_right_y_coordinate": {
         "name": {
@@ -361,8 +361,8 @@
         "schema": {
             "type": "string"
         },
-        "originalName": "AP_SPOSN_BEAM_P2Y",
-        "originalType": "number"
+        "original_name": "AP_SPOSN_BEAM_P2Y",
+        "original_type": "number"
     },
     "probe_polar_angle_to_sample_normal": {
         "name": {
@@ -372,9 +372,9 @@
         "schema": {
             "type": "string"
         },
-        "originalName": "AP_STGTILT",
         "unit": "deg",
-        "originalType": "number"
+        "original_name": "AP_STGTILT",
+        "original_type": "number"
     },
     "comment": {
         "name": {
@@ -384,7 +384,7 @@
         "schema": {
             "type": "string"
         },
-        "originalName": "AP_COMMENT"
+        "original_name": "AP_COMMENT"
     },
     "neutralization_active_mode": {
         "name": {
@@ -394,7 +394,7 @@
         "schema": {
             "type": "string"
         },
-        "originalName": "AP_IGN_NEUT_MODE"
+        "original_name": "AP_IGN_NEUT_MODE"
     },
     "data_type": {
         "name": {
@@ -404,7 +404,7 @@
         "schema": {
             "type": "string"
         },
-        "originalName": "AP_DATATYPE"
+        "original_name": "AP_DATATYPE"
     },
     "analysis_chamber_pressure_when_measurement_finished": {
         "name": {
@@ -414,7 +414,7 @@
         "schema": {
             "type": "string"
         },
-        "originalName": "AP_CHAMBER_PRESS",
-        "unit": "Pa"
+        "unit": "Pa",
+        "original_name": "AP_CHAMBER_PRESS"
     }
 }

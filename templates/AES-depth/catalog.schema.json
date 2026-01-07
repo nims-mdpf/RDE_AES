@@ -1,126 +1,106 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "https://rde.nims.go.jp/rde/dataset-templates/NIMS_AES-depth/catalog.schema.json",
+    "$id": "https://rde.nims.go.jp/rde/dataset-templates/RDEDatasetTemplateSheet_RDE_AES-depth/catalog.schema.json",
     "type": "object",
     "required": [
         "catalog"
     ],
+    "description": "標準データセットテンプレートRDE_AESのAES-depth用RDEデータセットテンプレート: データカタログ定義",
     "properties": {
         "catalog": {
             "type": "object",
             "label": {
-                "ja": "データカタログ",
-                "en": "Data Catalog"
+                "ja": "RDEDatasetTemplateSheet_RDE_AES-depth:データカタログ定義",
+                "en": "RDEDatasetTemplateSheet_RDE_AES-depth:data catalog format"
             },
+            "required": [],
             "properties": {
                 "dataset_title": {
-                    "type": "string",
                     "label": {
                         "ja": "データセット名",
                         "en": "Dataset Title"
                     },
+                    "type": "string",
+                    "examples": "dtaset_title"
+                },
+                "data_creator": {
+                    "label": {
+                        "ja": "作成者",
+                        "en": "Data Creator"
+                    },
+                    "type": "string",
+                    "examples": "data_creator"
+                },
+                "experimental_apparatus": {
+                    "label": {
+                        "ja": "使用装置",
+                        "en": "Experimental Apparatus"
+                    },
+                    "type": "string",
+                    "examples": "experimental_apparatus",
                     "options": {
                         "widget": "textarea",
-                        "rows": 3
+                        "rows": 2
                     }
                 },
-                "abstract": {
-                    "type": "string",
+                "data_distribution": {
                     "label": {
-                        "ja": "概要",
-                        "en": "Abstract"
+                        "ja": "データの再配布",
+                        "en": "Data Distribution"
                     },
+                    "type": "string",
+                    "examples": "data_distribution",
                     "options": {
                         "widget": "textarea",
                         "rows": 5
                     }
                 },
-                "data_creator": {
-                    "type": "string",
-                    "label": {
-                        "ja": "作成者",
-                        "en": "Data Creator"
-                    },
-                    "options": {
-                        "widget": "textarea",
-                        "rows": 3
-                    }
-                },
-                "language": {
-                    "type": "string",
-                    "label": {
-                        "ja": "言語",
-                        "en": "Language"
-                    },
-                    "options": {
-                        "widget": "textarea",
-                        "rows": 3
-                    }
-                },
-                "experimental_apparatus": {
-                    "type": "string",
-                    "label": {
-                        "ja": "使用装置",
-                        "en": "Experimental Apparatus"
-                    },
-                    "options": {
-                        "widget": "textarea",
-                        "rows": 3
-                    }
-                },
-                "data_distribution": {
-                    "type": "string",
-                    "label": {
-                        "ja": "データの再配布",
-                        "en": "Data Distribution"
-                    },
-                    "options": {
-                        "widget": "textarea",
-                        "rows": 3
-                    }
-                },
                 "raw_data_type": {
-                    "type": "string",
                     "label": {
-                        "ja": "データ種",
-                        "en": "Data Type"
+                        "ja": "データの種類",
+                        "en": "Raw Data Type"
                     },
+                    "type": "string",
+                    "examples": "raw_data_type",
                     "options": {
                         "widget": "textarea",
-                        "rows": 3
+                        "rows": 5
                     }
                 },
-                "raw_data_size": {
-                    "type": "string",
+                "stored_data": {
                     "label": {
                         "ja": "格納データ",
                         "en": "Stored Data"
                     },
+                    "type": "string",
+                    "examples": "stored_data",
                     "options": {
                         "widget": "textarea",
-                        "rows": 25
+                        "rows": 5
                     }
                 },
                 "remarks": {
-                    "type": "string",
                     "label": {
                         "ja": "備考",
                         "en": "Remarks"
                     },
+                    "type": "string",
+                    "examples": "remarks",
                     "options": {
                         "widget": "textarea",
-                        "rows": 3
+                        "rows": 5
                     }
                 },
                 "references": {
-                    "type": "string",
                     "label": {
-                        "ja": "参考論文",
+                        "ja": "参考文献",
                         "en": "References"
                     },
+                    "type": "string",
+                    "examples": "references",
                     "options": {
                         "widget": "textarea",
-                        "rows": 3
+                        "rows": 5
                     }
                 }
             }
