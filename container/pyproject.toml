@@ -1,9 +1,10 @@
 [project]
 name = "AES Project"
-version = "1.0.0"
+version = "1.1.0"
+requires-python = ">=3.12,<3.13"
 
 [tool.flake8]
-max-line-length = 250
+max-line-length = 180
 ignore = "W503,I201,E203"
 exclude = ".venv,.git,__pycache__,__init__.py"
 
@@ -38,7 +39,7 @@ error_summary = true
 exclude = ["tests"]
 
 [tool.ruff]
-line-length = 1000
+line-length = 300
 lint.select = [
     "F",    # pyflakes
     "E",    # pycodestyle

@@ -170,7 +170,7 @@ class FileReader(IInputFileParser):
         data_mode = {
             "3": "AES-survey",
             "4": "AES-narrow",
-        }.get(dct_hdr["AP_DATATYPE"], None)
+        }.get(dct_hdr["AP_DATATYPE"])
 
         return dct_hdr, data_mode
 
