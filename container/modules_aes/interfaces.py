@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from abc import ABC, abstractmethod
 from pathlib import Path
-from typing import Any, Generic, TypeVar
+from typing import Any, TypeVar
 
 from rdetoolkit.models.rde2types import MetaType, RepeatedMetaType
 from rdetoolkit.rde2util import Meta
@@ -63,7 +63,7 @@ class IStructuredDataProcesser(ABC):
         raise NotImplementedError
 
 
-class IMetaParser(ABC, Generic[T]):
+class IMetaParser[T](ABC):
     """Abstract base class (interface) for meta information parsers.
 
     This interface defines the contract that meta information parser
@@ -93,7 +93,7 @@ class IMetaParser(ABC, Generic[T]):
         raise NotImplementedError
 
 
-class IGraphPlotter(ABC, Generic[T]):
+class IGraphPlotter[T](ABC):
     """Abstract base class (interface) for graph plotting implementations.
 
     This interface defines the contract that graph plotting
